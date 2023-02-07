@@ -53,7 +53,7 @@ export class AesCbcEncryptor implements IEncryptor<AesEncryptedResult> {
   };
 
   /**
-   * @throw DecryptError
+   * @throws DecryptError
    */
   decrypt = ({ encrypted, iv }: AesEncryptedResult): string => {
     const encryptedText = Buffer.from(encrypted, 'hex');
