@@ -8,6 +8,17 @@ describe('AesCbcEncryptor tests', () => {
     });
   });
 
+  describe('encrypt', () => {
+    it('should encrypt data', () => {
+      const password = 'password used to generate key';
+      const data = 'something-utf8-é😀';
+      const encryptor = new AesCbcEncryptor(password);
+      const { encrypted } = encryptor.encrypt(data);
+      expect(encrypted).not.toStrictEqual(data);
+      expect(encrypted.length).greaterThan(20);
+    });
+  });
+
   describe('decrypt', () => {
     it('should decrypt encrypted data', () => {
       const password = 'password used to generate key';
