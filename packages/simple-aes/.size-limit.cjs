@@ -9,8 +9,9 @@ const fullEsmMaxSize = "3080B";
 module.exports = [
   {
     name: "ESM (import everything *)",
-    path: ["dist/esm/index.js"],
-    import: "*",
+    path: ["dist/index.js"],
+    import: '*',
+    webpack: false,
     limit: fullEsmMaxSize,
   },
 ];
