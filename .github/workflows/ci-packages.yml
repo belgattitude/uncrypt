@@ -1,0 +1,89 @@
+name: CI-packages
+
+on:
+  push:
+    branches:
+     - main
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches:
+      - '**'
+    paths-ignore:
+      - 'examples/**'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Fetch all git history so that yarn workspaces --since can compare with the correct commits
+          # @link https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 📥 Monorepo install
+        uses: ./.github/actions/yarn-nm-install
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache-node-modules: true
+
+      - name: Restore packages cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/.cache
+            ${{ github.workspace }}/**/tsconfig.tsbuildinfo
+
+          key: ${{ runner.os }}-packages-cache-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('packages/**.[jt]sx?', 'packages/**.json') }}
+          restore-keys: |
+            ${{ runner.os }}-packages-cache-${{ hashFiles('**/yarn.lock') }}-
+
+      - name: Typecheck
+        run: |
+          yarn workspaces foreach -tv --from '@uncrypt/*' --no-private run typecheck
+
+      - name: ESLint checks
+        run: |
+          yarn workspaces foreach -tv --from '@uncrypt/*' --no-private run lint
+
+      - name: Unit tests
+        run: |
+          yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run test-unit --coverage
+
+      - name: Build packages
+        run: |
+          yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run build
+
+      - name: Check build for size-limits
+        run: |
+          yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run check-size
+
+      - name: Check build for ecmascript compliance
+        run: |
+          yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run check-dist
+
+      - name: Codecov upload
+        if: matrix.node-version == '16.x'
+        uses: codecov/codecov-action@v3
+        with:
+          directory: ./packages/simple-aes/coverage
+          #files: ./packages/http-simple-aes/coverage/clover.xml
+          flags: uncrypt-simple-aes-unit
+          fail_ci_if_error: false
+          verbose: false
+          working-directory: ${{ github.workspace }}
+
+      - name: Check doc can be built
+        run: |
+          yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run build-doc

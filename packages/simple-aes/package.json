@@ -1,0 +1,88 @@
+{
+  "name": "@uncrypt/simple-aes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Simple aes crypto routines",
+  "homepage": "https://github.com/belgattitude/uncrypt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belgattitude/uncrypt",
+    "directory": "packages/simple-aes"
+  },
+  "author": {
+    "name": "Vanvelthem Sébastien",
+    "url": "https://github.com/belgattitude"
+  },
+  "keywords": [
+    "aes",
+    "crypto"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "build-doc": "run-s build-typedoc",
+    "build-typedoc": "rimraf ./docs/api && typedoc --plugin typedoc-plugin-markdown --out ./docs/api",
+    "prettier-check": "yarn run --top-level prettier --check --cache --cache-location=\"../../.cache/prettier/simple-aes.prettiercache\" --config ../../.prettierrc.js --ignore-path ../../.prettierignore \"./**/*.{js,jsx,cjs,mjs,ts,tsx,mts,md,mdx,json,css,scss,less}\"",
+    "prettier-fix": "yarn run --top-level prettier --write --cache --cache-location=\"../../.cache/prettier/simple-aes.prettiercache\" --config ../../.prettierrc.js --ignore-path ../../.prettierignore \"./**/*.{js,jsx,cjs,mjs,ts,tsx,mts,md,mdx,json,css,scss,less}\"",
+    "lint": "cross-env TIMING=1 eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/simple-aes.eslintcache",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit",
+    "check-dist": "run-s check-dist-esm",
+    "check-dist-esm": "es-check --not './dist/*.map.js' --not './dist/**/*.d.ts' -v es2020 --module './dist/**/*'",
+    "check-size": "size-limit",
+    "test": "vitest run",
+    "test-unit": "vitest run",
+    "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix"
+  },
+  "devDependencies": {
+    "@belgattitude/eslint-config-bases": "1.18.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-typescript": "11.0.0",
+    "@size-limit/file": "8.1.2",
+    "@size-limit/webpack": "8.1.2",
+    "@size-limit/webpack-why": "8.1.2",
+    "@swc/core": "1.3.32",
+    "@types/node": "18.13.0",
+    "@vitest/coverage-istanbul": "0.28.4",
+    "corejs": "1.0.0",
+    "cross-env": "7.0.3",
+    "es-check": "7.1.0",
+    "eslint": "8.33.0",
+    "get-tsconfig": "4.4.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "4.1.2",
+    "rollup": "3.14.0",
+    "rollup-plugin-dts": "5.1.1",
+    "rollup-plugin-node-externals": "5.1.2",
+    "rollup-plugin-swc3": "0.8.0",
+    "size-limit": "8.1.2",
+    "tslib": "2.5.0",
+    "typedoc": "0.23.24",
+    "typedoc-plugin-markdown": "3.14.0",
+    "typescript": "4.9.5",
+    "vite": "4.1.1",
+    "vite-tsconfig-paths": "4.0.5",
+    "vitest": "0.28.4",
+    "webpack": "5.75.0"
+  },
+  "engines": {
+    "node": ">=14.17"
+  }
+}
