@@ -1,5 +1,11 @@
 # @uncrypt/simple-aes
 
+## 0.1.0
+
+### Minor Changes
+
+- [#6](https://github.com/belgattitude/uncrypt/pull/6) [`21aa0ab`](https://github.com/belgattitude/uncrypt/commit/21aa0abe42896fc8590bf92d0ae9ece2e424774d) Thanks [@belgattitude](https://github.com/belgattitude)! - More doc and tests
+
 ## 0.0.2
 
 ### Patch Changes
