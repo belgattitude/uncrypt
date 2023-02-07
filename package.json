@@ -18,7 +18,7 @@
   "scripts": {
     "g:clean": "yarn clean:global-cache && yarn workspaces foreach -pv run clean",
     "g:build": "yarn workspaces foreach -ptv run build",
-    "g:build-packages": "yarn workspaces foreach -ptv --include '@httpx/*' run build",
+    "g:build-packages": "yarn workspaces foreach -ptv --include '@uncrypt/*' run build",
     "g:build-examples": "yarn workspaces foreach -ptv --include '@examples/*' run build",
     "g:build-doc": "yarn workspaces foreach -ptv run build-doc",
     "g:test": "yarn workspaces foreach -pv run test",
@@ -30,7 +30,7 @@
     "g:changeset": "changeset",
     "g:check-dist": "yarn workspaces foreach -ptv run check-dist",
     "g:check-size": "yarn workspaces foreach -ptv run check-size",
-    "g:check-package-dist": "yarn workspaces foreach -ptv --include '@httpx/*' run check-dist",
+    "g:check-package-dist": "yarn workspaces foreach -ptv --include '@uncrypt/*' run check-dist",
     "g:release": "yarn g:build-packages && yarn g:check-package-dist && changeset publish",
     "clean:lint": "rimraf ./.cache/eslint",
     "clean:global-cache": "rimraf ./.cache",
