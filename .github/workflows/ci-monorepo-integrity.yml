@@ -1,0 +1,43 @@
+name: CI-monorepo-integrity
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches:
+      - '**'
+    paths-ignore:
+      - 'docs/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 📥 Monorepo install
+        uses: ./.github/actions/yarn-nm-install
+        with:
+          cacheExtraKey: ${{ matrix.node-version }}
+
+      - name: 🔎 Check for duplicates
+        run: |
+          yarn dedupe --check
+
+      - name: 🦺 Check for yarn constraints.pro
+        run: |
+          yarn constraints
+
+      - name: 🛟 Check monorepo dependency graph
+        run: |
+          yarn check:install
