@@ -18,6 +18,26 @@ yarn add @uncrypt/simple-aes     # via yarn
 pnpm add @uncrypt/simple-aes     # via pnpm
 ```
 
+## Usage
+
+```typescript
+import {
+  AesCbcEncryptor,
+  DecryptError,
+  WeakPasswordError,
+} from "@uncrypt/simple-aes";
+
+const key = "long-enough-secret-encryption-key";
+
+const data = "something-utf8-é😀";
+
+const aesCrypt = new AesCbcEncryptor(key); // will throw WeakPasswordError if too short
+
+const crypted = aesCrypt.encrypt(data);
+
+aesCrypt.decrypt(crypted); // will throw Decrypt error if iv not valid or wrong key
+```
+
 ## Support
 
 Don't hesitate and open [an issue](https://github.com/belgattitude/uncrypt/issues).
