@@ -250,14 +250,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@belgattitude/eslint-config-bases@npm:1.18.0":
-  version: 1.18.0
-  resolution: "@belgattitude/eslint-config-bases@npm:1.18.0"
+"@belgattitude/eslint-config-bases@npm:1.20.2":
+  version: 1.20.2
+  resolution: "@belgattitude/eslint-config-bases@npm:1.20.2"
   dependencies:
     "@rushstack/eslint-patch": "npm:^1.2.0"
-    "@tanstack/eslint-plugin-query": "npm:4.24.0"
-    "@typescript-eslint/eslint-plugin": "npm:^5.49.0"
-    "@typescript-eslint/parser": "npm:^5.49.0"
+    "@tanstack/eslint-plugin-query": "npm:4.24.5"
+    "@typescript-eslint/eslint-plugin": "npm:^5.51.0"
+    "@typescript-eslint/parser": "npm:^5.51.0"
     eslint-config-prettier: "npm:^8.6.0"
     eslint-import-resolver-typescript: "npm:^3.5.3"
     eslint-plugin-import: "npm:^2.27.5"
@@ -271,12 +271,13 @@ __metadata:
     eslint-plugin-regexp: "npm:^1.12.0"
     eslint-plugin-sonarjs: "npm:^0.18.0"
     eslint-plugin-storybook: "npm:^0.6.10"
-    eslint-plugin-tailwindcss: "npm:^3.8.2"
-    eslint-plugin-testing-library: "npm:^5.10.0"
+    eslint-plugin-tailwindcss: "npm:^3.8.3"
+    eslint-plugin-testing-library: "npm:^5.10.1"
   peerDependencies:
     "@angular-eslint/template-parser": ^15.2.0
     "@graphql-eslint/eslint-plugin": ^3.14.3
     eslint: ^8.29.0
+    eslint-plugin-mdx: 2.0.5
     graphql: ^16.6.0
     prettier: ^2.7.0 || >= 3.0.0-alpha.4
     react: ^18.0.2
@@ -287,6 +288,8 @@ __metadata:
     "@angular-eslint/template-parser":
       optional: true
     "@graphql-eslint/eslint-plugin":
+      optional: true
+    eslint-plugin-mdx:
       optional: true
     graphql:
       optional: true
@@ -300,7 +303,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: d2a0cf42d51b2bc0cc8fdfc3011bc7745ff0512669b77e584791974b79021f7216e6d89727d7286dae3dd6443f76ab668e94cd6fcfdafd5de8a4617f6b677124
+  checksum: 3ba00d90107c537e7cc8bc173c106f51c2839f934b154088867e6dc0acf507039cfbc5f4edb287e7e9a77a92a89efb3889d0d751d0d9ea6392851842515074c6
   languageName: node
   linkType: hard
 
@@ -1575,10 +1578,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/eslint-plugin-query@npm:4.24.0":
-  version: 4.24.0
-  resolution: "@tanstack/eslint-plugin-query@npm:4.24.0"
-  checksum: 1e9358726e182635a521715b8eb86c333e43d32c0607871073ef69eff5a3710a7a079ea34158f2daf570f2bc4a73117411a6cd19a4ba5052a8d337a71fca0306
+"@tanstack/eslint-plugin-query@npm:4.24.5":
+  version: 4.24.5
+  resolution: "@tanstack/eslint-plugin-query@npm:4.24.5"
+  checksum: 969092a982075f5da78447d60436c187cf3884375a65fa00109aad1cfd89d572179b13c28dc6874c5a42f4ee3a1bef0f6c307116d69d5e77b4058cedec196672
   languageName: node
   linkType: hard
 
@@ -1778,7 +1781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.49.0":
+"@typescript-eslint/eslint-plugin@npm:^5.51.0":
   version: 5.51.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.51.0"
   dependencies:
@@ -1802,7 +1805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.49.0":
+"@typescript-eslint/parser@npm:^5.51.0":
   version: 5.51.0
   resolution: "@typescript-eslint/parser@npm:5.51.0"
   dependencies:
@@ -1903,7 +1906,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@uncrypt/simple-aes@workspace:packages/simple-aes"
   dependencies:
-    "@belgattitude/eslint-config-bases": "npm:1.18.0"
+    "@belgattitude/eslint-config-bases": "npm:1.20.2"
     "@rollup/plugin-node-resolve": "npm:15.0.1"
     "@rollup/plugin-typescript": "npm:11.0.0"
     "@size-limit/file": "npm:8.1.2"
@@ -4204,7 +4207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tailwindcss@npm:^3.8.2":
+"eslint-plugin-tailwindcss@npm:^3.8.3":
   version: 3.8.3
   resolution: "eslint-plugin-tailwindcss@npm:3.8.3"
   dependencies:
@@ -4216,14 +4219,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "eslint-plugin-testing-library@npm:5.10.0"
+"eslint-plugin-testing-library@npm:^5.10.1":
+  version: 5.10.1
+  resolution: "eslint-plugin-testing-library@npm:5.10.1"
   dependencies:
     "@typescript-eslint/utils": "npm:^5.43.0"
   peerDependencies:
     eslint: ^7.5.0 || ^8.0.0
-  checksum: 8040b908c0eda5e9731e0797bb7e934a4f2532cd98a49f5b220a2c79c73c08902679026029fff96376e2214f656a832d308f46e382b4b601dd460a22226f8666
+  checksum: 0dd018d26127fe8a86bb1ea7e03ac434fcc2edd3563bb7404ee03b7e4dfc784597efd2c2770db4dcd3283c7159eefec50f25430ddc50f51301f1560d82dc9fc2
   languageName: node
   linkType: hard
 
@@ -9237,7 +9240,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "uncrypt-monorepo@workspace:."
   dependencies:
-    "@belgattitude/eslint-config-bases": "npm:1.18.0"
+    "@belgattitude/eslint-config-bases": "npm:1.20.2"
     "@changesets/changelog-github": "npm:0.4.8"
     "@changesets/cli": "npm:2.26.0"
     "@commitlint/cli": "npm:17.4.2"
