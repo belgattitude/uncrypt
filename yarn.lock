@@ -1723,10 +1723,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.13.0":
-  version: 18.13.0
-  resolution: "@types/node@npm:18.13.0"
-  checksum: 591b7b9a97dbeaa155c3fe1a00e22fc13241781bda02f4e96935811723e7719fe18ed003301551cfa3273488cc7cf2f99146b752abc9b60aaab57bcbc67da830
+"@types/node@npm:*, @types/node@npm:18.15.2":
+  version: 18.15.2
+  resolution: "@types/node@npm:18.15.2"
+  checksum: eecf4ab9f7c70dd469cf2aa9ecc09a02dafde05d54c1c459a40ea885fad7f0b28acb0f163f0d820f1da33043813e8fb255fd027032b4e7cdfc5010f54b60efb8
   languageName: node
   linkType: hard
 
@@ -1920,7 +1920,7 @@ __metadata:
     "@size-limit/webpack": "npm:8.1.2"
     "@size-limit/webpack-why": "npm:8.1.2"
     "@swc/core": "npm:1.3.39"
-    "@types/node": "npm:18.13.0"
+    "@types/node": "npm:18.15.2"
     "@vitest/coverage-istanbul": "npm:0.29.2"
     corejs: "npm:1.0.0"
     cross-env: "npm:7.0.3"
