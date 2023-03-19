@@ -1949,7 +1949,7 @@ __metadata:
     npm-run-all: "npm:4.1.5"
     rimraf: "npm:4.4.0"
     rollup: "npm:3.19.1"
-    rollup-plugin-dts: "npm:5.1.1"
+    rollup-plugin-dts: "npm:5.3.0"
     rollup-plugin-node-externals: "npm:5.1.2"
     rollup-plugin-swc3: "npm:0.8.0"
     size-limit: "npm:8.2.4"
@@ -6399,12 +6399,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.27.0":
-  version: 0.27.0
-  resolution: "magic-string@npm:0.27.0"
+"magic-string@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "magic-string@npm:0.30.0"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.4.13"
-  checksum: 3b7ea05374ce06a1f4726a752959af578d5cd864b00321f2ffa131b5256776d47b87fbcf569b42abe6e70f53708dec91996776ce942bc68c21f91b205356cd57
+  checksum: ed9c8873be1494aaebba171705ae16bc14646d933410f53cf4a997b53a0d231e8aa7f168b7c3ed942099f19ad0c3e419e4033a01b758b94f0eb1e48d65ab6078
   languageName: node
   linkType: hard
 
@@ -8029,19 +8029,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-dts@npm:5.1.1":
-  version: 5.1.1
-  resolution: "rollup-plugin-dts@npm:5.1.1"
+"rollup-plugin-dts@npm:5.3.0":
+  version: 5.3.0
+  resolution: "rollup-plugin-dts@npm:5.3.0"
   dependencies:
     "@babel/code-frame": "npm:^7.18.6"
-    magic-string: "npm:^0.27.0"
+    magic-string: "npm:^0.30.0"
   peerDependencies:
     rollup: ^3.0.0
-    typescript: ^4.1
+    typescript: ^4.1 || ^5.0
   dependenciesMeta:
     "@babel/code-frame":
       optional: true
-  checksum: 38f97fb980bfa45d2cf9a841ea09ea056d37147414ae6256c987058e82333f09ce374de04d6a8b12424da1e5b8bbea5e514b386484a119d0c61fe430b5db9254
+  checksum: a0f186301a857b2e5fc8b40f0e5436aa32e4ca7b1f3394bb27c480ae595680b9be7424ede1aa9eb04c92f360c251cb63ad9906b7b7b19351698708303d8768d9
   languageName: node
   linkType: hard
 
