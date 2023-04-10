@@ -58,7 +58,7 @@
     "@size-limit/file": "8.2.4",
     "@size-limit/webpack": "8.2.4",
     "@size-limit/webpack-why": "8.2.4",
-    "@swc/core": "1.3.42",
+    "@swc/core": "1.3.49",
     "@types/node": "18.13.0",
     "@vitest/coverage-istanbul": "0.29.8",
     "corejs": "1.0.0",
