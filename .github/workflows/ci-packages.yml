@@ -34,9 +34,6 @@ jobs:
 
       - name: 📥 Monorepo install
         uses: ./.github/actions/yarn-nm-install
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache-node-modules: false
 
       - name: Restore packages cache
         uses: actions/cache@v3
@@ -74,7 +71,7 @@ jobs:
           yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run check-dist
 
       - name: Codecov upload
-        if: matrix.node-version == '16.x'
+        if: matrix.node-version == '18.x'
         uses: codecov/codecov-action@v3
         with:
           directory: ./packages/simple-aes/coverage
