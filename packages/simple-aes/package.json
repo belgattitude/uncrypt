@@ -52,7 +52,7 @@
     "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix"
   },
   "devDependencies": {
-    "@belgattitude/eslint-config-bases": "1.32.0",
+    "@belgattitude/eslint-config-bases": "1.33.0",
     "@rollup/plugin-node-resolve": "15.1.0",
     "@rollup/plugin-typescript": "11.1.1",
     "@size-limit/file": "8.2.4",
