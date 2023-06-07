@@ -1969,7 +1969,7 @@ __metadata:
     rimraf: "npm:5.0.1"
     rollup: "npm:3.24.0"
     rollup-plugin-dts: "npm:5.3.0"
-    rollup-plugin-node-externals: "npm:6.0.1"
+    rollup-plugin-node-externals: "npm:6.1.1"
     rollup-plugin-swc3: "npm:0.8.2"
     size-limit: "npm:8.2.4"
     tslib: "npm:2.5.2"
@@ -8148,12 +8148,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-node-externals@npm:6.0.1":
-  version: 6.0.1
-  resolution: "rollup-plugin-node-externals@npm:6.0.1"
+"rollup-plugin-node-externals@npm:6.1.1":
+  version: 6.1.1
+  resolution: "rollup-plugin-node-externals@npm:6.1.1"
   peerDependencies:
     rollup: ^3.0.0
-  checksum: 92ba4a3b1da01213f8594db26dcaa55eae6c68027dbc583430d5ea805908275300775d87425d14372f41ebd3260a1a382e222538840302a22120dcdd0c6c4159
+  checksum: 92edcceef1e8b7aaf55460bddfa5af00dc480a7d4c428557324ece99ca13beb2b1917ba42ce837cc5ad079931729a9360b7825c20563303cc844b1377bb1d50d
   languageName: node
   linkType: hard
 
@@ -9389,11 +9389,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A5.1.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^4.6.4 || ^5.0.0#optional!builtin<compat/typescript>":
   version: 5.1.3
-  resolution: "typescript@patch:typescript@npm%3A5.1.3#optional!builtin<compat/typescript>::version=5.1.3&hash=77c9e2"
+  resolution: "typescript@patch:typescript@npm%3A5.1.3#optional!builtin<compat/typescript>::version=5.1.3&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 24de93b5b464a551b43c62579107f859a1b612840b63ceb8965ed7eaf38519562e879bd2f5c6f0702c5331bbe31d1907dc0c5985dc9bddf7c3b3ea15756a6d78
+  checksum: ef6d5eaa31049b41bf1ddf091806aed923e65ea3de951bb27e05bc65911c3bf373b3c2bcc9204d2d2dbdca7d2e06c6a645824580638a8c2c18e2e5155cfc33b7
   languageName: node
   linkType: hard
 
