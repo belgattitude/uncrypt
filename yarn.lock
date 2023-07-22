@@ -1976,7 +1976,7 @@ __metadata:
     rimraf: "npm:5.0.1"
     rollup: "npm:3.26.0"
     rollup-plugin-dts: "npm:5.3.0"
-    rollup-plugin-node-externals: "npm:6.0.1"
+    rollup-plugin-node-externals: "npm:6.1.1"
     rollup-plugin-swc3: "npm:0.8.2"
     size-limit: "npm:8.2.4"
     tslib: "npm:2.6.0"
@@ -8162,12 +8162,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-node-externals@npm:6.0.1":
-  version: 6.0.1
-  resolution: "rollup-plugin-node-externals@npm:6.0.1"
+"rollup-plugin-node-externals@npm:6.1.1":
+  version: 6.1.1
+  resolution: "rollup-plugin-node-externals@npm:6.1.1"
   peerDependencies:
     rollup: ^3.0.0
-  checksum: 92ba4a3b1da01213f8594db26dcaa55eae6c68027dbc583430d5ea805908275300775d87425d14372f41ebd3260a1a382e222538840302a22120dcdd0c6c4159
+  checksum: 92edcceef1e8b7aaf55460bddfa5af00dc480a7d4c428557324ece99ca13beb2b1917ba42ce837cc5ad079931729a9360b7825c20563303cc844b1377bb1d50d
   languageName: node
   linkType: hard
 
