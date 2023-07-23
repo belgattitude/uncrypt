@@ -1994,7 +1994,7 @@ __metadata:
     rollup-plugin-dts: "npm:5.3.0"
     rollup-plugin-node-externals: "npm:6.1.1"
     rollup-plugin-swc3: "npm:0.8.2"
-    size-limit: "npm:8.2.4"
+    size-limit: "npm:8.2.6"
     tslib: "npm:2.6.0"
     typedoc: "npm:0.24.8"
     typedoc-plugin-markdown: "npm:3.15.3"
@@ -6173,7 +6173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lilconfig@npm:2.1.0, lilconfig@npm:^2.0.6":
+"lilconfig@npm:2.1.0, lilconfig@npm:^2.1.0":
   version: 2.1.0
   resolution: "lilconfig@npm:2.1.0"
   checksum: 1c7c643ccda7eb00b0d904912c1d7ea9cc36fe2e4e7e752b940daa9ba9550049c5ec1375f835cda58b9a917f6b0fbcae63617c1f63c139c1a20217dae4e58f39
@@ -8453,19 +8453,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"size-limit@npm:8.2.4":
-  version: 8.2.4
-  resolution: "size-limit@npm:8.2.4"
+"size-limit@npm:8.2.6":
+  version: 8.2.6
+  resolution: "size-limit@npm:8.2.6"
   dependencies:
     bytes-iec: "npm:^3.1.1"
     chokidar: "npm:^3.5.3"
     globby: "npm:^11.1.0"
-    lilconfig: "npm:^2.0.6"
+    lilconfig: "npm:^2.1.0"
     nanospinner: "npm:^1.1.0"
     picocolors: "npm:^1.0.0"
   bin:
     size-limit: bin.js
-  checksum: dbac7b4d1e982dd9733fba88a45f7a7c5bc3e08d1f595230334775f462b09c53b27b05bc1554412cbbb91f75f26b7ab33334370cc34b2bc25c82e2a2f8a30705
+  checksum: bdd01c5d534277dffa9b458fede0b6f62c496b9863d6a6a301390a4f896bf0e0df124d1573ea9925b8b5119f84bb568b72760dcfd92dcffe4b59647b9b0c7ab9
   languageName: node
   linkType: hard
 
