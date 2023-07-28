@@ -35,10 +35,6 @@
 
 ▸ **decrypt**(`«destructured»`): `string`
 
-**`Throws`**
-
-DecryptError
-
 #### Parameters
 
 | Name             | Type                                                    |
@@ -48,6 +44,10 @@ DecryptError
 #### Returns
 
 `string`
+
+**`Throws`**
+
+DecryptError
 
 #### Implementation of
 
@@ -59,10 +59,6 @@ DecryptError
 
 ▸ **encrypt**(`text`): [`AesEncryptedResult`](../README.md#aesencryptedresult)
 
-**`Throws`**
-
-EncryptError
-
 #### Parameters
 
 | Name   | Type     |
@@ -72,6 +68,10 @@ EncryptError
 #### Returns
 
 [`AesEncryptedResult`](../README.md#aesencryptedresult)
+
+**`Throws`**
+
+EncryptError
 
 #### Implementation of
 

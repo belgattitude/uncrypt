@@ -58,6 +58,16 @@ jobs:
         run: |
           yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run test-unit --coverage
 
+      - name: Codecov upload
+        if: matrix.node-version == '18.x'
+        uses: codecov/codecov-action@v3
+        with:
+          directory: ./packages/simple-aes/coverage
+          flags: uncrypt-simple-aes-unit
+          fail_ci_if_error: false
+          verbose: false
+          working-directory: ${{ github.workspace }}
+
       - name: Build packages
         run: |
           yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run build
@@ -70,16 +80,6 @@ jobs:
         run: |
           yarn workspaces foreach -tv --include '@uncrypt/*' --no-private run check-dist
 
-      - name: Codecov upload
-        if: matrix.node-version == '18.x'
-        uses: codecov/codecov-action@v3
-        with:
-          directory: ./packages/simple-aes/coverage
-          #files: ./packages/http-simple-aes/coverage/clover.xml
-          flags: uncrypt-simple-aes-unit
-          fail_ci_if_error: false
-          verbose: false
-          working-directory: ${{ github.workspace }}
 
       - name: Check doc can be built
         run: |
