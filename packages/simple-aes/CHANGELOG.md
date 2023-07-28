@@ -1,5 +1,13 @@
 # @uncrypt/simple-aes
 
+## 0.3.0
+
+### Minor Changes
+
+- [#112](https://github.com/belgattitude/uncrypt/pull/112) [`93e3f6e`](https://github.com/belgattitude/uncrypt/commit/93e3f6e16237c277e5cc26e422a503352ed2e891) Thanks [@belgattitude](https://github.com/belgattitude)! - Build with tsup and fix types exports
+
+- [#112](https://github.com/belgattitude/uncrypt/pull/112) [`93e3f6e`](https://github.com/belgattitude/uncrypt/commit/93e3f6e16237c277e5cc26e422a503352ed2e891) Thanks [@belgattitude](https://github.com/belgattitude)! - Add cjs export to ease usage with jest in commonjs projects
+
 ## 0.2.0
 
 ### Minor Changes
