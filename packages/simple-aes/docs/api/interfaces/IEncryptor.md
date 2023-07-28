@@ -25,10 +25,6 @@
 
 ▸ **decrypt**(`encrypted`): `string`
 
-**`Throws`**
-
-DecryptError
-
 #### Parameters
 
 | Name        | Type |
@@ -39,15 +35,15 @@ DecryptError
 
 `string`
 
+**`Throws`**
+
+DecryptError
+
 ---
 
 ### encrypt
 
 ▸ **encrypt**(`text`): `T`
-
-**`Throws`**
-
-EncryptError
 
 #### Parameters
 
@@ -58,3 +54,7 @@ EncryptError
 #### Returns
 
 `T`
+
+**`Throws`**
+
+EncryptError

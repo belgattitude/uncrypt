@@ -13,7 +13,7 @@ export default defineConfig((options) => {
       };
     },
     platform: 'node',
-    target: ["node16"],
+    target: ["node16", "es2020"],
     tsconfig: './tsconfig.build.json',
     sourcemap: !options.watch,
     minify: !options.watch,

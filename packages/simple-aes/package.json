@@ -72,8 +72,6 @@
     "@arethetypeswrong/cli": "0.7.0",
     "@belgattitude/eslint-config-bases": "1.39.0",
     "@size-limit/file": "8.2.6",
-    "@size-limit/webpack": "8.2.6",
-    "@size-limit/webpack-why": "8.2.6",
     "@types/node": "20.4.5",
     "@vitest/coverage-v8": "0.33.0",
     "corejs": "1.0.0",
@@ -92,8 +90,7 @@
     "typescript": "5.1.6",
     "vite": "4.4.7",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.33.0",
-    "webpack": "5.88.2"
+    "vitest": "0.33.0"
   },
   "engines": {
     "node": ">=16.16"
