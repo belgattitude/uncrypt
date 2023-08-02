@@ -29,9 +29,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arethetypeswrong/cli@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@arethetypeswrong/cli@npm:0.7.0"
+"@arethetypeswrong/cli@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@arethetypeswrong/cli@npm:0.7.1"
   dependencies:
     "@arethetypeswrong/core": "npm:0.7.0"
     chalk: "npm:^4.1.2"
@@ -39,9 +39,10 @@ __metadata:
     commander: "npm:^10.0.1"
     marked: "npm:^5.1.0"
     marked-terminal: "npm:^5.2.0"
+    node-fetch: "npm:^2.6.4"
   bin:
     attw: dist/index.js
-  checksum: 0fdda3edd53c8578226404e67a9a864788bf548386d312eb0d2712171ded0afb762883fc8c1e7e312609ed4fef2d0dccb186823d53303ef91a6bdb586329e0fc
+  checksum: 9a36dca16dac89a3b698d9fa772d97b8702c44c80b1ec4825b311243c9206a62a711e868d6529f79278cbae40b66ec3b83a5901d50f8ca26b09229f31c2f0cca
   languageName: node
   linkType: hard
 
@@ -1379,7 +1380,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@uncrypt/simple-aes@workspace:packages/simple-aes"
   dependencies:
-    "@arethetypeswrong/cli": "npm:0.7.0"
+    "@arethetypeswrong/cli": "npm:0.7.1"
     "@belgattitude/eslint-config-bases": "npm:1.39.0"
     "@size-limit/file": "npm:8.2.6"
     "@types/node": "npm:20.4.5"
@@ -6116,7 +6117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.6, node-fetch@npm:~2.6.1":
+"node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.4, node-fetch@npm:^2.6.6, node-fetch@npm:~2.6.1":
   version: 2.6.12
   resolution: "node-fetch@npm:2.6.12"
   dependencies:
