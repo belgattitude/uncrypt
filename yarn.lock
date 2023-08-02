@@ -1394,7 +1394,7 @@ __metadata:
     rimraf: "npm:5.0.1"
     size-limit: "npm:8.2.6"
     tslib: "npm:2.6.1"
-    tsup: "npm:7.1.0"
+    tsup: "npm:7.2.0"
     typedoc: "npm:0.24.8"
     typedoc-plugin-markdown: "npm:3.15.4"
     typescript: "npm:5.1.6"
@@ -8429,9 +8429,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@npm:7.1.0":
-  version: 7.1.0
-  resolution: "tsup@npm:7.1.0"
+"tsup@npm:7.2.0":
+  version: 7.2.0
+  resolution: "tsup@npm:7.2.0"
   dependencies:
     bundle-require: "npm:^4.0.0"
     cac: "npm:^6.7.12"
@@ -8461,7 +8461,7 @@ __metadata:
   bin:
     tsup: dist/cli-default.js
     tsup-node: dist/cli-node.js
-  checksum: 985c34c866a877b41d8c4d6d790e2ccf0585acc43f37ebfcd89a303203fce14bd09cf09eb2de9eb07dff21ec7f3e5aca2f5198f44bfa76c82f7630776888dfc5
+  checksum: f8bd6a05042af09d63f78e4e83bfe1ade9448f8eea8bac51f9335683f74fd827acef8510f2d061970060d7a6f697b6ca88318c411583a7a6ad07032830579474
   languageName: node
   linkType: hard
 
