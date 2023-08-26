@@ -69,7 +69,7 @@
     "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.7.1",
+    "@arethetypeswrong/cli": "0.8.0",
     "@belgattitude/eslint-config-bases": "1.39.0",
     "@size-limit/file": "8.2.6",
     "@types/node": "20.4.9",
