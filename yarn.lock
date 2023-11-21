@@ -1255,10 +1255,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/shell-quote@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@types/shell-quote@npm:1.7.1"
-  checksum: 9/e7f1aa415c09bd0aaf2a866cf0288bdb15adc1f9d5017ff50689bf4a63dd6c960ae8de22073ba668dc29497ebe4577d91a2b0a7654dc966acbb4a7acc504f556
+"@types/shell-quote@npm:1.7.5":
+  version: 1.7.5
+  resolution: "@types/shell-quote@npm:1.7.5"
+  checksum: 32b4d697c7d23dbadf40713692c47f1595f083a3b3deea76cb18e30a05d197aa9205d2b87f6d92edb60cda120b51e35d32bda96ed9b0a7e32921eed2deb4559e
   languageName: node
   linkType: hard
 
@@ -8619,7 +8619,7 @@ __metadata:
     "@commitlint/cli": "npm:17.7.1"
     "@commitlint/config-conventional": "npm:17.7.0"
     "@types/prettier": "npm:2.7.3"
-    "@types/shell-quote": "npm:1.7.1"
+    "@types/shell-quote": "npm:1.7.5"
     cross-env: "npm:7.0.3"
     docsify: "npm:4.13.1"
     docsify-cli: "npm:4.4.4"
