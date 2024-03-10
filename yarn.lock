@@ -1403,7 +1403,7 @@ __metadata:
     size-limit: "npm:8.2.6"
     tslib: "npm:2.6.1"
     tsup: "npm:7.2.0"
-    typedoc: "npm:0.24.8"
+    typedoc: "npm:0.25.12"
     typedoc-plugin-markdown: "npm:3.15.4"
     typescript: "npm:5.1.6"
     vite: "npm:4.4.9"
@@ -5867,12 +5867,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.0, minimatch@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "minimatch@npm:9.0.1"
+"minimatch@npm:^9.0.1, minimatch@npm:^9.0.3":
+  version: 9.0.3
+  resolution: "minimatch@npm:9.0.3"
   dependencies:
     brace-expansion: "npm:^2.0.1"
-  checksum: 9/6648745fd9fc8d5870d59d4fde5defd9d4cb3d44cbb6831e97e103c43f1d9bf5fcc24cea54e9e3bf09eac7e002cce200cc295e30c84180198970a0bed369f037
+  checksum: c81b47d28153e77521877649f4bab48348d10938df9e8147a58111fe00ef89559a2938de9f6632910c4f7bf7bb5cd81191a546167e58d357f0cfb1e18cecc1c5
   languageName: node
   linkType: hard
 
@@ -7555,15 +7555,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.14.1":
-  version: 0.14.1
-  resolution: "shiki@npm:0.14.1"
+"shiki@npm:^0.14.7":
+  version: 0.14.7
+  resolution: "shiki@npm:0.14.7"
   dependencies:
     ansi-sequence-parser: "npm:^1.1.0"
     jsonc-parser: "npm:^3.2.0"
     vscode-oniguruma: "npm:^1.7.0"
     vscode-textmate: "npm:^8.0.0"
-  checksum: 9/5e63df92f2763f6696e498c033834734dbf5378a84c71a44ec1cd847b4994b65726d7e47b73caf58c1ff9f15c3fede6b051634435dd3e594f5fd768996b5c20b
+  checksum: be3f2444c65bd0c57802026f171cb42ad571d361ee885be0c292b60785f68c70f19b69310f5ffe7f7a93db4c5ef50211e0a0248794bc6bb48d242bc43fe72a62
   languageName: node
   linkType: hard
 
@@ -8545,19 +8545,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc@npm:0.24.8":
-  version: 0.24.8
-  resolution: "typedoc@npm:0.24.8"
+"typedoc@npm:0.25.12":
+  version: 0.25.12
+  resolution: "typedoc@npm:0.25.12"
   dependencies:
     lunr: "npm:^2.3.9"
     marked: "npm:^4.3.0"
-    minimatch: "npm:^9.0.0"
-    shiki: "npm:^0.14.1"
+    minimatch: "npm:^9.0.3"
+    shiki: "npm:^0.14.7"
   peerDependencies:
-    typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x
+    typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x
   bin:
     typedoc: bin/typedoc
-  checksum: 9/391223966e33420e63c46000a131ef6f28056f61d77f26f4df958def9cf54dad9076e59bfac7be2c025e8d88cb1e663b8a180d65b91fe8c7ab70a7cfffc46093
+  checksum: eb02b35a6fd1f8c3f9bb2b42b379139cce5b72b3797e983e58f61578b23610c1ee770dc442286981ab13d2949bdb746a84c38bcd856f09ac50a7a861cca56fd8
   languageName: node
   linkType: hard
 
