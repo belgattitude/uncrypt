@@ -1204,10 +1204,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.4.9":
-  version: 20.4.9
-  resolution: "@types/node@npm:20.4.9"
-  checksum: 9/1a86945e32831c50f6b03a8219bfc921c6d2c9fe30dc01a367c1478ead53804e6aa0eaacc4ec72643c7f4a6a8c53813c3f4f6afd59b7df609407d3022bac6d2d
+"@types/node@npm:*, @types/node@npm:20.11.30":
+  version: 20.11.30
+  resolution: "@types/node@npm:20.11.30"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 78515bc768d2b878e2e06a1c20eb4f5840072b79b8d28ff3dd0a7feaaf48fd3a2ac03cfa5bc7564da82db5906b43e9ba0e5df9f43d870b7aae2942306e208815
   languageName: node
   linkType: hard
 
@@ -1390,7 +1392,7 @@ __metadata:
     "@arethetypeswrong/cli": "npm:0.8.0"
     "@belgattitude/eslint-config-bases": "npm:1.39.0"
     "@size-limit/file": "npm:8.2.6"
-    "@types/node": "npm:20.4.9"
+    "@types/node": "npm:20.11.30"
     "@vitest/coverage-v8": "npm:0.34.3"
     corejs: "npm:1.0.0"
     cross-env: "npm:7.0.3"
@@ -8634,6 +8636,13 @@ __metadata:
     typescript: "npm:5.1.6"
   languageName: unknown
   linkType: soft
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 0097779d94bc0fd26f0418b3a05472410408877279141ded2bd449167be1aed7ea5b76f756562cb3586a07f251b90799bab22d9019ceba49c037c76445f7cddd
+  languageName: node
+  linkType: hard
 
 "unique-filename@npm:^2.0.0":
   version: 2.0.1
