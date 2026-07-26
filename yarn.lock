@@ -1255,10 +1255,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/shell-quote@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@types/shell-quote@npm:1.7.1"
-  checksum: 9/e7f1aa415c09bd0aaf2a866cf0288bdb15adc1f9d5017ff50689bf4a63dd6c960ae8de22073ba668dc29497ebe4577d91a2b0a7654dc966acbb4a7acc504f556
+"@types/shell-quote@npm:1.7.5":
+  version: 1.7.5
+  resolution: "@types/shell-quote@npm:1.7.5"
+  checksum: 32b4d697c7d23dbadf40713692c47f1595f083a3b3deea76cb18e30a05d197aa9205d2b87f6d92edb60cda120b51e35d32bda96ed9b0a7e32921eed2deb4559e
   languageName: node
   linkType: hard
 
@@ -7548,10 +7548,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:1.8.1, shell-quote@npm:^1.6.1":
-  version: 1.8.1
-  resolution: "shell-quote@npm:1.8.1"
-  checksum: 9/8f06faa1888a928fdcc30fa68803260a101dc1b5fb717072f9797c6001701c14b181381e54d5838f5975afc88f35ffabf880e82fd3b13557b79593fc64685a5b
+"shell-quote@npm:1.10.0, shell-quote@npm:^1.6.1":
+  version: 1.10.0
+  resolution: "shell-quote@npm:1.10.0"
+  checksum: d4a22aeefe64919290af753ac6098239d7ffee52a5db62c20edef69794bd10b5f86e298f68be26af9606ac435e890dd391994a5405a90bb8aebef1ff1dde839b
   languageName: node
   linkType: hard
 
@@ -8619,7 +8619,7 @@ __metadata:
     "@commitlint/cli": "npm:17.7.1"
     "@commitlint/config-conventional": "npm:17.7.0"
     "@types/prettier": "npm:2.7.3"
-    "@types/shell-quote": "npm:1.7.1"
+    "@types/shell-quote": "npm:1.7.5"
     cross-env: "npm:7.0.3"
     docsify: "npm:4.13.1"
     docsify-cli: "npm:4.4.4"
@@ -8630,7 +8630,7 @@ __metadata:
     npm-run-all: "npm:4.1.5"
     prettier: "npm:3.0.1"
     rimraf: "npm:5.0.1"
-    shell-quote: "npm:1.8.1"
+    shell-quote: "npm:1.10.0"
     typescript: "npm:5.1.6"
   languageName: unknown
   linkType: soft
