@@ -1050,6 +1050,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@publint/pack@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "@publint/pack@npm:0.1.7"
+  dependencies:
+    tinyexec: "npm:^1.3.0"
+  checksum: 5016c49e19eecb177cfad08301228ebd75fd1b56b32566b54afae01e26a04d2fc0f2e004d0165fbf9ce9846147951aa8ddc423abb0ece33959fe1af2d73fffa7
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.3.2":
   version: 1.3.2
   resolution: "@rushstack/eslint-patch@npm:1.3.2"
@@ -1398,7 +1407,7 @@ __metadata:
     eslint: "npm:8.46.0"
     get-tsconfig: "npm:4.7.0"
     npm-run-all: "npm:4.1.5"
-    publint: "npm:0.2.1"
+    publint: "npm:0.3.24"
     rimraf: "npm:5.0.1"
     size-limit: "npm:8.2.6"
     tslib: "npm:2.6.1"
@@ -4540,15 +4549,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore-walk@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "ignore-walk@npm:5.0.1"
-  dependencies:
-    minimatch: "npm:^5.0.1"
-  checksum: 9/c7b4771272ff78a248742c51cc9e03d45aed0df922d1939f41eaab8bf3bffe06c376cb3222938297850cdcf81acf39f8427779f69d41bb29e4489d16503987d2
-  languageName: node
-  linkType: hard
-
 "ignore@npm:^5.2.0":
   version: 5.2.4
   resolution: "ignore@npm:5.2.4"
@@ -6197,36 +6197,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-bundled@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "npm-bundled@npm:2.0.1"
-  dependencies:
-    npm-normalize-package-bin: "npm:^2.0.0"
-  checksum: 9/fedd0950ef7edb74f0133d7d007d7e90c783f9df4765e1e1d9f24deee56ec2435772001e5c3fef92d3f60ae0a337b1f8814744aa28b8f93d5ef884813970f4c2
-  languageName: node
-  linkType: hard
-
-"npm-normalize-package-bin@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "npm-normalize-package-bin@npm:2.0.0"
-  checksum: 9/c64469d165d71ea4c3d53a51672a73c011b707c4d4a0a76b94f24ccf309c7c4d5d7057aa72d7051c71dc1351ecce5083de9d15e9822ca04f1cb9c586962376be
-  languageName: node
-  linkType: hard
-
-"npm-packlist@npm:^5.1.3":
-  version: 5.1.3
-  resolution: "npm-packlist@npm:5.1.3"
-  dependencies:
-    glob: "npm:^8.0.1"
-    ignore-walk: "npm:^5.0.1"
-    npm-bundled: "npm:^2.0.0"
-    npm-normalize-package-bin: "npm:^2.0.0"
-  bin:
-    npm-packlist: bin/index.js
-  checksum: 9/e5e7bee37507c3c1cb8b17abc78bf31f1e984d527958cfa1ac3291423b77e56435bb460ac9db1dba2d1f1c5117d0e3c1623facd8eda6e964b0d02c477e04cef1
-  languageName: node
-  linkType: hard
-
 "npm-run-all@npm:4.1.5":
   version: 4.1.5
   resolution: "npm-run-all@npm:4.1.5"
@@ -6603,6 +6573,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-manager-detector@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "package-manager-detector@npm:1.8.0"
+  checksum: 5d79b8bf3d0d3da312ec08749c74a3b7e4d4139c259fe3561538772c65ece8ff733e002c67a4324b5c505d2ac625c121b94cf3d5135e1b4e43fed5bced148763
+  languageName: node
+  linkType: hard
+
 "parent-module@npm:^1.0.0":
   version: 1.0.1
   resolution: "parent-module@npm:1.0.1"
@@ -6730,10 +6707,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "picocolors@npm:1.0.0"
-  checksum: 9/447e1f6e4953522a3947f2effa93dca66f2436a7c275327ba1a7fb526eab369fc9847d77ebcd734dc483322256f34b431e93a325e44726e4ec390c11cc7f5c87
+"picocolors@npm:^1.0.0, picocolors@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "picocolors@npm:1.1.1"
+  checksum: e1cf46bf84886c79055fdfa9dcb3e4711ad259949e3565154b004b260cd356c5d54b31a1437ce9782624bf766272fe6b0154f5f0c744fb7af5d454d2b60db045
   languageName: node
   linkType: hard
 
@@ -6938,16 +6915,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"publint@npm:0.2.1":
-  version: 0.2.1
-  resolution: "publint@npm:0.2.1"
+"publint@npm:0.3.24":
+  version: 0.3.24
+  resolution: "publint@npm:0.3.24"
   dependencies:
-    npm-packlist: "npm:^5.1.3"
-    picocolors: "npm:^1.0.0"
+    "@publint/pack": "npm:^0.1.7"
+    package-manager-detector: "npm:^1.8.0"
+    picocolors: "npm:^1.1.1"
     sade: "npm:^1.8.1"
   bin:
-    publint: lib/cli.js
-  checksum: 9/494b313b553bd550bbaaf251862427aa93aa2125608296e3a749449dcb677c4432b9d928eac621d7be5c69767dc4cfb7e1c6e1bec29b341acb187e99ec6e766d
+    publint: ./src/cli.js
+  checksum: 85054e87a8efa54ef398613604368c87c8bd006b954e7999b898e6a0d8284c7b9022808e8890876ead304172002ca9cd5192d9f3780f907389caf58bf335d575
   languageName: node
   linkType: hard
 
@@ -8198,6 +8176,13 @@ __metadata:
   version: 1.3.0
   resolution: "tinydate@npm:1.3.0"
   checksum: 9/65b384026db0b692169802b681f099de33878aa89451d17a26a0f2c134918c3296975cb9c39303ac2d8397f44790a841ceb77fb9b33a084d8789906a9b733283
+  languageName: node
+  linkType: hard
+
+"tinyexec@npm:^1.3.0":
+  version: 1.3.1
+  resolution: "tinyexec@npm:1.3.1"
+  checksum: 9c7a8ce2633f76c776d9ff663531c7b34d605f41909c2f97a27397e8c12bcaf721dae7680b6683232ffe7a6d465090be9926d5ffd00b5d7be9336a43b45289b1
   languageName: node
   linkType: hard
 
